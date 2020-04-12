@@ -81,7 +81,7 @@ Poetic_Decimal_Digit_Separator_Parser_Node::parse_choice_3(Token_Stream& input)
 
   Choice_3 choice;
 
-  choice.m_char = input.get();
+  choice.m_char = static_cast<wchar_t>(input.get());
   if (choice.m_char != L'.') {
     input.seekg(offset);
     return nullptr;

@@ -28,12 +28,12 @@ Ignore_Rest_Of_Line_Parser_Node::parse(Token_Stream& input)
 
   auto separator = Separator_Parser_Node::parse(input);
   while (true) {
-    auto c = input.peek();
+    auto c = static_cast<wchar_t>(input.peek());
     if (c == L'\n') {
       break;
     }
 
-    rest_of_line += input.get();
+    rest_of_line += static_cast<wchar_t>(input.get());
   }
 
   return std::make_shared<Ignore_Rest_Of_Line_Parser_Node>(std::move(separator),

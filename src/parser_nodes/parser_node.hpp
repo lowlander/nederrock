@@ -45,7 +45,7 @@ auto parse_zero_or_more(Token_Stream& input) -> typename std::vector<std::shared
   typename std::shared_ptr<Type> tmp;
   typename std::vector<std::shared_ptr<Type>> res;
 
-  while (tmp = Type::parse(input)) {
+  while ((tmp = Type::parse(input)) != nullptr) {
     res.push_back(tmp);
   }
 

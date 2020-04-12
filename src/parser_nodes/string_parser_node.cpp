@@ -31,7 +31,7 @@ String_Parser_Node::parse(Token_Stream& input)
   }
 
   while ((c = input.get()) != L'\"') {
-    str += c;
+    str += static_cast<wchar_t>(c);
   }
 
   return std::make_shared<String_Parser_Node>(std::move(str));

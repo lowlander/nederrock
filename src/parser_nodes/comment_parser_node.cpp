@@ -18,13 +18,13 @@ Comment_Parser_Node::Comment_Parser_Node(std::wstring&& text)
 Comment_Parser_Node_Ptr
 Comment_Parser_Node::parse(Token_Stream& input)
 {
-  wchar_t c = input.peek();
+  wchar_t c = static_cast<wchar_t>(input.peek());
 
   if (c == L'(') {
     input.get(); // get the ( and throw it away, we don't need it
 
     std::wstring text;
-    while ((c = input.get()) != L')') {
+    while ((c = static_cast<wchar_t>(input.get())) != L')') {
       text += c;
     }
 

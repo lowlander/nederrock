@@ -55,7 +55,7 @@ Noise_Parser_Node::parse_choice_2(Token_Stream& input)
 
   Choice_2 choice;
 
-  choice.m_char = input.get();
+  choice.m_char = static_cast<wchar_t>(input.get());
   switch(choice.m_char) {
     case L';':
     case L',':
