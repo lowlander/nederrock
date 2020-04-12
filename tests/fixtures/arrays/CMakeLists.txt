@@ -1,0 +1,6 @@
+add_rock_test(arrayalike)
+add_rock_test(arrays)
+add_rock_test(hash)
+add_rock_test(join)
+add_rock_test(split)
+add_rock_test(split_delimiters)

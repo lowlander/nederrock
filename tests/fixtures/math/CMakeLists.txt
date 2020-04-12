@@ -1,0 +1,6 @@
+add_rock_test(cast)
+add_rock_test(operator_aliases)
+add_rock_test(operator_precedence)
+add_rock_test(operators)
+add_rock_test(rounding_pronouns)
+add_rock_test(rounding)

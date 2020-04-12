@@ -1,0 +1,5 @@
+add_rock_test(99_beers)
+add_rock_test(factorial)
+add_rock_test(fibonacci)
+add_rock_test(fizzbuzz-idiomatic)
+add_rock_test(fizzbuzz-minimalist)

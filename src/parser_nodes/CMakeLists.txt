@@ -1,0 +1,116 @@
+#
+# Copyright (c) 2020 Erwin Rol <erwin@erwinrol.com>
+#
+# SPDX-License-Identifier: MIT
+#
+
+include_directories(../ ./)
+
+add_library(
+  parser_nodes
+
+  OBJECT
+
+  parser_node.cpp
+
+  add_parser_node.cpp
+  alternate_parser_node.cpp
+  and_parser_node.cpp
+  arithmetic_parser_node.cpp
+  assignable_parser_node.cpp
+  assignment_parser_node.cpp
+  block_parser_node.cpp
+  boolean_parser_node.cpp
+  break_parser_node.cpp
+  cast_parser_node.cpp
+  ceil_parser_node.cpp
+  comment_parser_node.cpp
+  common_prefix_parser_node.cpp
+  common_variable_parser_node.cpp
+  comparator_parser_node.cpp
+  comparison_parser_node.cpp
+  compoundable_operator_parser_node.cpp
+  conditional_parser_node.cpp
+  consequent_parser_node.cpp
+  constant_parser_node.cpp
+  continuation_parser_node.cpp
+  continue_parser_node.cpp
+  crement_parser_node.cpp
+  decrement_parser_node.cpp
+  divide_parser_node.cpp
+  eof_parser_node.cpp
+  eol_parser_node.cpp
+  eq_parser_node.cpp
+  equality_check_parser_node.cpp
+  expression_list_parser_node.cpp
+  expression_list_separator_parser_node.cpp
+  expression_parser_node.cpp
+  false_parser_node.cpp
+  floor_parser_node.cpp
+  function_call_parser_node.cpp
+  function_parser_node.cpp
+  function_return_parser_node.cpp
+  greater_parser_node.cpp
+  great_parser_node.cpp
+  ignore_rest_of_line_parser_node.cpp
+  increment_parser_node.cpp
+  indexer_parser_node.cpp
+  is_parser_node.cpp
+  join_parser_node.cpp
+  letter_parser_node.cpp
+  line_parser_node.cpp
+  literal_parser_node.cpp
+  lookup_parser_node.cpp
+  loopable_parser_node.cpp
+  loop_parser_node.cpp
+  lowercase_letter_parser_node.cpp
+  math_round_parser_node.cpp
+  modifier_parser_node.cpp
+  multiply_parser_node.cpp
+  mutation_parser_node.cpp
+  mutator_parser_node.cpp
+  mysterious_parser_node.cpp
+  noise_parser_node.cpp
+  nor_parser_node.cpp
+  not_parser_node.cpp
+  null_parser_node.cpp
+  number_parser_node.cpp
+  operation_parser_node.cpp
+  or_parser_node.cpp
+  output_parser_node.cpp
+  poetic_decimal_digit_separator_parser_node.cpp
+  poetic_decimal_digits_parser_node.cpp
+  poetic_decimal_parser_node.cpp
+  poetic_digit_parser_node.cpp
+  poetic_digit_separator_parser_node.cpp
+  poetic_digits_parser_node.cpp
+  poetic_number_parser_node.cpp
+  poetic_string_parser_node.cpp
+  product_parser_node.cpp
+  program_parser_node.cpp
+  pronoun_parser_node.cpp
+  proper_noun_parser_node.cpp
+  proper_variable_parser_node.cpp
+  readline_parser_node.cpp
+  return_parser_node.cpp
+  rounding_parser_node.cpp
+  separator_parser_node.cpp
+  simple_expression_parser_node.cpp
+  simple_variable_parser_node.cpp
+  smaller_parser_node.cpp
+  small_parser_node.cpp
+  split_parser_node.cpp
+  statement_parser_node.cpp
+  string_parser_node.cpp
+  subtract_parser_node.cpp
+  target_parser_node.cpp
+  true_parser_node.cpp
+  uppercase_letter_parser_node.cpp
+  variable_list_parser_node.cpp
+  variable_list_separator_parser_node.cpp
+  variable_parser_node.cpp
+  whitespace_parser_node.cpp
+)
+
+target_link_libraries(
+  parser_nodes PRIVATE project_warnings)

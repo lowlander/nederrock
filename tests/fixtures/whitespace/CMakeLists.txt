@@ -1,0 +1,7 @@
+add_rock_test(apostrophesIgnored)
+add_rock_test(leading_blank_lines)
+add_rock_test(leading_empty_lines)
+add_rock_test(leading_whitespace)
+add_rock_test(no_newline_at_eof)
+add_rock_test(trailing_blank_lines)
+add_rock_test(trailing_empty_lines)

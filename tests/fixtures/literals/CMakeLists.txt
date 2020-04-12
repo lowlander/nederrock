@@ -1,0 +1,4 @@
+add_rock_test(literalAliases)
+add_rock_test(literalstrings)
+add_rock_test(poeticLiterals)
+add_rock_test(poeticNumbers)

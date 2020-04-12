@@ -1,0 +1,3 @@
+add_rock_test(complex_comments)
+add_rock_test(simple_comment)
+add_rock_test(simpleComments)

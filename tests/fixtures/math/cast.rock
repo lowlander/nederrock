@@ -1,0 +1,29 @@
+Let X be "123.45"
+say X
+
+Cast X
+    (X now contains the numeric value 123.45)
+say X
+
+Let X be "ff"
+say X
+
+Cast X with 16
+    (X now contains the numeric value 255 - OxFF)
+say X
+
+Cast "12345" into result
+    (result now contains the number 12345)
+say result
+
+Cast "aa" into result with 16
+    (result now contains the number 170 - 0xAA)
+say result
+
+Cast 65 into result
+    (result now contains the string "A" - ASCII code 65)
+say result
+
+Cast 1046 into result
+    (result now contains the Cyrillic letter "Ж" - Unicode code point 1046)
+say result
