@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/lowlander/nederrock.svg?branch=master)](https://travis-ci.com/lowlander/nederrock)
+
 # NederRock
 
 Nederrock is a [Rockstar](https://github.com/dylanbeattie/rockstar) to C++ transpiler written in C++.
