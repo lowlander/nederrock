@@ -194,7 +194,7 @@ struct Variable {
   Variable(const wchar_t* str, double nr) : m_data(Number(str, nr)) { }
   Variable(const wchar_t* str) : m_data(String(str)) { }
   Variable(bool b) : m_data(Bool(b)) { }
-  Variable(nullptr_t) : m_data(Null()) { }
+  Variable(std::nullptr_t) : m_data(Null()) { }
   Variable(Number&& nr) : m_data(nr) { }
   Variable(String&& s) : m_data(s) { }
   Variable(Bool&& b) : m_data(b) { }
