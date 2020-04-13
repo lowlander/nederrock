@@ -77,7 +77,7 @@ Line_Parser_Node::parse_choice_1(Token_Stream& input)
   Eol_Parser_Node_Ptr tmp;
   Eol_Parser_Node_Vector eols;
 
-  while (tmp = Eol_Parser_Node::parse(input)) {
+  while ((tmp = Eol_Parser_Node::parse(input)) != nullptr) {
     if (input.peek() == WEOF) {
       break;
     }
