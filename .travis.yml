@@ -17,4 +17,4 @@ before_script:
 script:
   - if [ "$TRAVIS_OS_NAME" = "linux" ]; then make && make test ; fi
   - if [ "$TRAVIS_OS_NAME" = "osx" ]; then make && make test ; fi
-  - if [ "$TRAVIS_OS_NAME" = "windows" ]; then nmake && nmake test ; fi
+  - if [ "$TRAVIS_OS_NAME" = "windows" ]; then nmake.exe && nmake.exe test ; fi
